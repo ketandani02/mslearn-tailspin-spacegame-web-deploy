@@ -67,9 +67,9 @@ stages:
 
 
   - stage: 'Deploy'
-        displayName: 'Deploy the web application'
-        dependsOn: Build
-        jobs:
+    displayName: 'Deploy the web application'
+    dependsOn: Build
+    jobs:
         - deployment: Deploy
           pool:
             vmImage: 'ubuntu-18.04'
